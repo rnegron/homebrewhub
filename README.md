@@ -189,12 +189,8 @@ python3 manage.py makemigrations hhub
 # Sync the database for the first time
 python3 manage.py migrate
 
-# Clone the database repositories
-# GB/GBC
-git clone https://github.com/gbdev/database/
-# GBA
-git clone https://github.com/gbadev-org/games database-gba
-
+# Download the database git submodules
+git submodule update --init
 
 # Populate with the entries from the database repository
 python3 manage.py runscript sync_db

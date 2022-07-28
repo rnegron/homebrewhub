@@ -1,0 +1,6 @@
+[submodule "database"]
+	path = database
+	url = https://github.com/gbdev/database
+[submodule "database-gba"]
+	path = database-gba
+	url = https://github.com/gbadev-org/games
