@@ -54,3 +54,6 @@ class Entry(models.Model):
             models.Index(fields=["platform"], name="platform_idx"),
             models.Index(fields=["typetag"], name="typetag_idx"),
         ]
+
+    def __str__(self):
+        return f"{self.title} ({self.platform})"
